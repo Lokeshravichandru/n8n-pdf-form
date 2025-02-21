@@ -1,7 +1,7 @@
 {
 	"name": "n8n-nodes-pdf-form",
-	"version": "0.1.0",
-	"description": "",
+	"version": "0.1.3",
+	"description": "Pdf Form n8n node extract and map fields from pdf",
 	"keywords": [
 		"n8n-community-node-package"
 	],
@@ -9,7 +9,7 @@
 	"homepage": "",
 	"author": {
 		"name": "Lokesh Ravichandru",
-		"email": "lokesh.ravichandru@ezto.io"
+		"email": "lokesh.ravichandru@grootan.com"
 	},
 	"repository": {
 		"type": "git",
@@ -25,9 +25,9 @@
 		"preinstall": "npx only-allow pnpm",
 		"build": "tsc && gulp build:icons",
 		"dev": "tsc --watch",
-		"format": "prettier nodes credentials --write",
-		"lint": "eslint nodes credentials package.json",
-		"lintfix": "eslint nodes credentials package.json --fix",
+		"format": "prettier nodes --write",
+		"lint": "eslint nodes package.json",
+		"lintfix": "eslint nodes package.json --fix",
 		"prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes package.json"
 	},
 	"files": [
@@ -36,7 +36,7 @@
 	"n8n": {
 		"n8nNodesApiVersion": 1,
 		"nodes": [
-			"dist/nodes/PDFFormNode/PDFForm.node.js"
+			"dist/nodes/PdfForm/PdfForm.node.js"
 		]
 	},
 	"devDependencies": {

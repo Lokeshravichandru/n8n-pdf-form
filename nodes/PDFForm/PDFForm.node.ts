@@ -12,7 +12,7 @@ import { PDFDocument } from 'pdf-lib';
 
 const BINARY_ENCODING = 'base64';
 
-export class PDFForm implements INodeType {
+export class PdfForm implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'PDF Form',
 		name: 'pdfForm',
@@ -74,7 +74,7 @@ export class PDFForm implements INodeType {
 						operation: ['mapFields'],
 					},
 				},
-				description: 'Name of the output PDF file. Leave empty to use input filename',
+				description: 'Name of the output PDF file. Leave empty to use input filename.',
 			},
 			{
 				displayName: 'Fields',
@@ -186,7 +186,8 @@ export class PDFForm implements INodeType {
 							totalFields: fields.length,
 							fields: fieldInfo,
 							fieldNames: fields.map((field) => field.getName()),
-						}
+						},
+						binary: items[i].binary,
 					});
 				} else if (operation === 'mapFields') {
 					const fieldValues = this.getNodeParameter('fields.fieldValues', i, []) as Array<{
