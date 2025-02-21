@@ -8,12 +8,12 @@
 	"license": "MIT",
 	"homepage": "",
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "Lokesh Ravichandru",
+		"email": "lokesh.ravichandru@ezto.io"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/<...>/n8n-nodes-<...>.git"
+		"url": "https://github.com/Lokeshravichandru/n8n-pdf-form.git"
 	},
 	"engines": {
 		"node": ">=18.10",
