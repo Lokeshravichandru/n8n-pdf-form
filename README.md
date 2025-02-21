@@ -1,4 +1,4 @@
-# n8n-nodes-pdf-form
+# n8n-pdf-form
 
 This is an n8n community node. It lets you use to extract fields from pdf and map fields with value and return as flatten pdf in your n8n workflows.
 
